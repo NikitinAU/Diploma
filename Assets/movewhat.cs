@@ -8,6 +8,7 @@ public class movewhat : MonoBehaviour
     public FixedJoystick leftJoystick;
     public FixedButton Button;
     protected ThirdPersonUserControl ctrl;
+    protected 
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,6 @@ public class movewhat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ctrl.m_Jump = Button.Pressed;
         ctrl.HInput = leftJoystick.Horizontal;
         ctrl.VInput = leftJoystick.Vertical;
     }
